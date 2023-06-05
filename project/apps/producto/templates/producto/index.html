@@ -1,4 +1,14 @@
 {% extends 'home/base.html' %}
     {% block content %}
         <h1>PRODUCTO</h1>
+        <h2>Placas de Video</h2>
+        {% for placa in placas %}
+        <p>{{ placa.marca }}</p>
+        <p>{{ placa.modelo }}</p>
+        <p>{{ placa.tipo_de_gama }}</p>
+        <p>{{ placa.precio }}</p>
+        {% endfor %}
+
     {% endblock content %}
+
+    
